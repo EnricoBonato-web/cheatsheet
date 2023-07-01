@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <page-view :theme="activeTheme" />
+  <div :class="`grid grid-cols-12 ${activeTheme}`">
+    <page-view />
   </div>
 </template>
 
@@ -20,5 +20,11 @@ const activeTheme = 'light';
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   margin-top: 0px;
+}
+.text__color {
+  color: var(--text);
+}
+.background_color {
+  background-color: var(--bg);
 }
 </style>

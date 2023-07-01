@@ -13,7 +13,6 @@
     </template>
 
     <template #description>
-      ``` title: Welcome to Example.com ```
       <p>
         React is a popular JavaScript library for building user interfaces. It was developed by
         Facebook and released in 2013. React is widely used for creating interactive web
