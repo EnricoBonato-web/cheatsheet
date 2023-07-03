@@ -3,15 +3,6 @@
     <template #title>
       <h1>React</h1>
     </template>
-
-    <template #index>
-      <ul>
-        <li>description</li>
-        <li>code</li>
-        <li>tips</li>
-      </ul>
-    </template>
-
     <template #description>
       <p>
         React is a popular JavaScript library for building user interfaces. It was developed by

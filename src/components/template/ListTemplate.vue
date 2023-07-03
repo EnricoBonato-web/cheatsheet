@@ -1,10 +1,10 @@
 <template>
-  <div class="p-8 grid grid-cols-12 gap-4 w-full">
-    <div id="title" class="page_accent text-center m-auto text-4xl col-span-12">
+  <div class="m-8 grid grid-cols-12 gap-4 w-full">
+    <div id="title" class="text-center m-auto text-4xl col-span-12">
       <slot name="title" class="text-center m-auto text-4xl" />
     </div>
 
-    <div id="description" class="text-left col-span-12">
+    <div id="description" class="text-left col-span-10">
       <slot name="description"></slot>
     </div>
 

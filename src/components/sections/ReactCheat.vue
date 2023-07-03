@@ -3,17 +3,7 @@
     <template #title>
       <h1>React</h1>
     </template>
-
-    <template #index>
-      <ul>
-        <li>description</li>
-        <li>code</li>
-        <li>tips</li>
-      </ul>
-    </template>
-
     <template #description>
-      ``` title: Welcome to Example.com ```
       <p>
         React is a popular JavaScript library for building user interfaces. It was developed by
         Facebook and released in 2013. React is widely used for creating interactive web
@@ -78,4 +68,22 @@
 import LanguageTemplate from '../template/LanguageTemplate.vue';
 </script>
 
-<style scoped></style>
+<style>
+.react {
+  --react-accent: #007ea4;
+  --react-bg-1: rgba(120, 131, 155, 0.2);
+  --react-text: rgb(246 247 249);
+  --react-bg: rgb(35 39 47);
+  --bg: var(--react-bg);
+  --nav-bg: var(--react-bg-1);
+  --nav-text: var(--react-text);
+  --nav-accent: var(--react-accent);
+  --nav-links: var(--react-bg);
+  --page-bg: var(--react-bg);
+  --page-text: var(--react-text);
+  --page-accent: var(--react-accent);
+}
+strong {
+  color: var(--react-accent);
+}
+</style>

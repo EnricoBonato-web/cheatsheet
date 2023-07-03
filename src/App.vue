@@ -1,12 +1,27 @@
 <template>
-  <div :class="`grid grid-cols-12 ${activeTheme}`">
+  <div :class="`background_color grid grid-cols-12 light ${activeTheme}`">
     <page-view />
   </div>
 </template>
 
 <script setup lang="ts">
+import { ref, watch } from 'vue';
 import PageView from './components/PageView.vue';
-const activeTheme = 'light';
+import { useRoute } from 'vue-router';
+
+const activeTheme = ref('light');
+
+const route = useRoute();
+
+watch(
+  () => route.path,
+  (newRouteName) => {
+    console.log(newRouteName);
+    activeTheme.value = newRouteName
+      ? newRouteName.toString().substring(1).toLocaleLowerCase()
+      : 'default-theme';
+  }
+);
 </script>
 
 <style>
@@ -20,11 +35,5 @@ const activeTheme = 'light';
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   margin-top: 0px;
-}
-.text__color {
-  color: var(--text);
-}
-.background_color {
-  background-color: var(--bg);
 }
 </style>
