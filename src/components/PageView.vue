@@ -22,4 +22,4 @@ const update = (newLinks: string[]) => {
 };
 </script>
 
-<style scoped></style>
+<style></style>

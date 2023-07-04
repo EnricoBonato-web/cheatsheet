@@ -1,61 +1,55 @@
 <template>
   <language-template>
     <template #title>
-      <h1>React</h1>
+      <h1>Vue</h1>
     </template>
     <template #description>
-      <pre>
-        <code >
-          <p>
-            React is a popular JavaScript library for building user interfaces. It was developed by
-            Facebook and released in 2013. React is widely used for creating interactive web
-            applications, particularly single-page applications (SPAs) where the content is
-            dynamically updated without requiring a full page reload.
-          </p>
-          <p>Key features of React include:</p>
-          <ol>
-            <li>
-              <strong>Component-Based Architecture:</strong> React is based on a component-based
-              architecture, where the UI is broken down into reusable components. Components
-              encapsulate their own logic and state, making it easier to manage complex UIs.
-            </li>
-            <li>
-              <strong>Virtual DOM:</strong> React uses a virtual DOM (Document Object Model) to
-              efficiently update the user interface. When there are changes in the underlying data,
-              React calculates the minimum number of updates required and applies them to the virtual
-              DOM. Then, it efficiently updates the actual DOM, minimizing the performance overhead.
-            </li>
-            <li>
-              <strong>JSX:</strong> React uses JSX (JavaScript XML), an extension to JavaScript that
-              allows you to write HTML-like syntax within JavaScript code. This helps in creating and
-              composing components in a more declarative and intuitive manner.
-            </li>
-            <li>
-              <strong>Unidirectional Data Flow:</strong> React follows a unidirectional data flow
-              pattern, where data flows in a single direction. This makes it easier to understand and
-              debug how data changes propagate through the application.
-            </li>
-            <li>
-              <strong>React Hooks:</strong> Introduced in React 16.8, hooks are functions that allow
-              you to use state and other React features in functional components, which were
-              traditionally stateless. Hooks provide a simpler way to manage state and lifecycle
-              events without the need for class components.
-            </li>
-            <li>
-              <strong>React Ecosystem:</strong> React has a vibrant ecosystem with a wide range of
-              third-party libraries and tools. These include React Router for managing application
-              routing, Redux for state management, and Material-UI for pre-built UI components, among
-              many others.
-            </li>
-          </ol>
-          <p>
-            React has gained significant popularity due to its simplicity, performance optimizations,
-            and community support. It is widely used by developers and companies to build complex and
-            responsive web applications. React Native, a framework based on React, also enables the
-            development of mobile applications for iOS and Android using React's component model.
-          </p>
-        </code>
-      </pre>
+      <h2>What is Vue?</h2>
+      <p>
+        <strong>Vue.js</strong> is a progressive JavaScript framework for building user interfaces.
+        It offers reactive data binding, a component-based architecture, virtual DOM, directives,
+        routing with Vue Router, state management with Vuex, and a command-line interface (Vue CLI).
+        Vue is known for its simplicity, performance, and active community.
+      </p>
+      <h2>Why use Vue?</h2>
+      <ul class="grid grid-cols-4 gap-4 mb-4">
+        <li class="whys">
+          <strong>Easy Learning Curve:</strong> Vue.js has a gentle learning curve, making it
+          accessible for developers of all levels.
+        </li>
+        <li class="whys">
+          <strong>Flexible and Versatile:</strong> Vue.js is adaptable, fitting small to large
+          projects and allowing incremental adoption.
+        </li>
+        <li class="whys">
+          <strong>Reactive Data Binding:</strong> Vue.js's reactive data binding system keeps the UI
+          in sync with the data effortlessly.
+        </li>
+        <li class="whys">
+          <strong>Performance Optimization:</strong> Vue.js optimizes performance by efficiently
+          updating the UI using a virtual DOM.
+        </li>
+        <li class="whys">
+          <strong>Active Community:</strong> Vue.js boasts an active community, offering extensive
+          resources and plugins.
+        </li>
+        <li class="whys">
+          <strong>Official Tooling:</strong> Vue.js provides official tools like Vue Router and Vuex
+          for routing and state management.
+        </li>
+        <li class="whys">
+          <strong>Trusted by Big Companies:</strong> Vue.js is adopted by renowned companies,
+          demonstrating its reliability.
+        </li>
+        <li class="whys">
+          <strong>Incremental Integration:</strong> Vue.js can be integrated gradually into existing
+          projects without the need for a complete overhaul.
+        </li>
+      </ul>
+      <p>
+        Vue.js strikes a balance between simplicity, performance, and flexibility, making it a
+        popular choice for modern web application development.
+      </p>
     </template>
 
     <template #code>
@@ -73,6 +67,9 @@ import LanguageTemplate from '../template/LanguageTemplate.vue';
 </script>
 
 <style>
+.whys {
+  @apply flex flex-col;
+}
 .vue {
   --vue-accent: #42b883;
   --vue-bg-1: #1a1a1a;
