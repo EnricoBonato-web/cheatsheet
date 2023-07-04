@@ -3,7 +3,13 @@
     <li v-for="page in pages" :key="page" class="nav_links link">
       <RouterLink :to="page">
         <div class="pl-4">{{ page }}</div>
-        <div v-for="link in prop.links" :key="link" class="hidden ml-6 text-base">{{ link }}</div>
+        <transition appear name="fade" mode="out-in">
+          <ul class="hidden">
+            <li v-for="link in prop.links" :key="link" class="ml-6 text-base">
+              {{ link }}
+            </li>
+          </ul>
+        </transition>
       </RouterLink>
     </li>
   </ul>
@@ -19,7 +25,7 @@ const pages: string[] = ['Vue', 'React', 'Ui', 'Design', 'Javascript'];
   @apply m-2 rounded-md pt-4 pb-4 text-2xl;
 }
 
-.router-link-active div {
+.router-link-active ul {
   display: block;
 }
 .router-link-active div:first-of-type {

@@ -74,6 +74,7 @@ import LanguageTemplate from '../template/LanguageTemplate.vue';
   --react-bg-1: rgba(120, 131, 155, 0.2);
   --react-text: rgb(246 247 249);
   --react-bg: rgb(35 39 47);
+
   --bg: var(--react-bg);
   --nav-bg: var(--react-bg-1);
   --nav-text: var(--react-text);
@@ -82,8 +83,5 @@ import LanguageTemplate from '../template/LanguageTemplate.vue';
   --page-bg: var(--react-bg);
   --page-text: var(--react-text);
   --page-accent: var(--react-accent);
-}
-strong {
-  color: var(--react-accent);
 }
 </style>

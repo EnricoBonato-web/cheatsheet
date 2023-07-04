@@ -14,8 +14,8 @@
   --sandy-brown: #f4a261ff;
   --burnt-sienna: #e76f51ff;
 
-  --time-text: 1s;
-  --time-bg: 4s;
+  --time-text: 0.5s;
+  --time-bg: 0.3s;
 }
 .light {
   --bg: var(--gray1);
@@ -41,8 +41,10 @@
 .nav_text,
 .nav_links,
 .page_background,
-.page_text {
-  transition: background-color var(--time-bg), color var(--time-text);
+.page_text,
+.page_accent,
+strong {
+  transition: background-color var(--time-bg), color var(--time-text), opacity 0.3s;
 }
 .text__color {
   color: var(--text);
@@ -78,4 +80,17 @@
 
 .page_accent {
   color: var(--page-accent);
+}
+strong {
+  color: var(--page-accent);
+  transition: background-color var(--time-bg), color var(--time-text);
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity var(--time-bg) ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
