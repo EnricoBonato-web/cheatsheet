@@ -34,6 +34,10 @@ h2 {
   color: var(--page-accent);
   @apply mt-4 mb-2 text-2xl;
 }
+h1 {
+  color: var(--page-accent);
+  @apply mt-4 mb-2 text-4xl;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

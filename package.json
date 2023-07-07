@@ -13,6 +13,7 @@
     "tailwind": "^4.0.0",
     "vue": "^3.2.13",
     "vue-class-component": "^8.0.0-0",
+    "vue-code-highlight": "^0.7.8",
     "vue-router": "^4.2.2"
   },
   "devDependencies": {
